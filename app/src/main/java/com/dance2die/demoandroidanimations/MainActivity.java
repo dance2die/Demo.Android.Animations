@@ -14,7 +14,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void fade(View view){
         ImageView bart = (ImageView) findViewById(R.id.bart);
-        bart.animate().alpha(0f).setDuration(2000);
+        ImageView homer = (ImageView) findViewById(R.id.homer);
+
+        if (bart.getAlpha() == 0f){
+            bart.animate().alpha(1f).setDuration(2000);
+            homer.animate().alpha(0f).setDuration(2000);
+        } else {
+            bart.animate().alpha(0f).setDuration(2000);
+            homer.animate().alpha(1f).setDuration(2000);
+        }
     }
 
     @Override
