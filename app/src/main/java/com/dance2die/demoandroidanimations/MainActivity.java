@@ -13,16 +13,21 @@ import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity {
 
     public void fade(View view){
-        ImageView bart = (ImageView) findViewById(R.id.bart);
-        ImageView homer = (ImageView) findViewById(R.id.homer);
+//        ImageView bart = (ImageView) findViewById(R.id.bart);
+//        ImageView homer = (ImageView) findViewById(R.id.homer);
+//
+//        if (bart.getAlpha() == 0f){
+//            bart.animate().alpha(1f).setDuration(2000);
+//            homer.animate().alpha(0f).setDuration(2000);
+//        } else {
+//            bart.animate().alpha(0f).setDuration(2000);
+//            homer.animate().alpha(1f).setDuration(2000);
+//        }
 
-        if (bart.getAlpha() == 0f){
-            bart.animate().alpha(1f).setDuration(2000);
-            homer.animate().alpha(0f).setDuration(2000);
-        } else {
-            bart.animate().alpha(0f).setDuration(2000);
-            homer.animate().alpha(1f).setDuration(2000);
-        }
+        ImageView bart = (ImageView) findViewById(R.id.bart);
+        bart.animate().translationYBy(1000f).setDuration(2000);
+
+
     }
 
     @Override
