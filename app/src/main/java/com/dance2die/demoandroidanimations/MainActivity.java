@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 //        }
 
         ImageView bart = (ImageView) findViewById(R.id.bart);
-        bart.animate().translationYBy(1000f).setDuration(2000);
+        bart.animate().rotationBy(3600f).setDuration(4000);
 
 
     }
